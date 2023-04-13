@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自作の問題集</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container" class="container">
+    <div class="problem" id="problem1"><p>情報セキュリティは数学や～の総合科学である</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem2"><p>bananaはバナナでない。</p> <button class="btn1 inc">〇</button> <button class="btn2 cor">×</button> </div>
+    <div class="problem" id="problem3"><p>情報セキュリティの基本要素は<br>・秘匿性(confidentiality)(機密性・守秘性)ー個人情報などの秘密を守れること。暗号による。※身の回りの秘密の情報とは何か考えてみよ。<br>・完全性(integrity(一貫性)ー情報の偽造や改ざん(されてもばれる)、破壊を防ぐこと。認証による。※偽造、改ざん、破壊の区別を明確に。<br>・可用性(availabity)-情報や資源が必要なときに利用できること。※安全のために使えなくすることをセキュリティとは言わない。である</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem4"><p>インシデントの例、ランサムウエア(ransomware:身代金要求型マルウェァ)<br>ー企業内の各種情報を暗号化し、利用できなくする。  完全性と可用性の侵害。<br>ー企業内の機密情報を外部に送信する(公開する)。  秘匿性の侵害。<br>・インターネットバンキングの不正利用<br>ー他人が本人になりすましてログインする。  秘匿性の侵害(認証情報等個人情報の漏洩)。<br>ー他人が勝手に他人に送金する。  完全性の侵害(口座残高の不正な変更)。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem5"><p>自分のPCを経由して他のサーバーを攻撃するなど、踏み台にされるかもしれないのでセキュリティは大切である。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem6"><p>暗号は秘匿性と完全性を達成する道具である。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem7"><p>共通鍵暗号は秘密鍵を共有するために別の手段が必要である。さらに、争いの解決（通信相手の不正の立証）はできない。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem8"><p>公開鍵暗号は受信者のみが秘密鍵を持ち、受信者の公開鍵を使って送信者は暗号化する。<br>処理が複雑なため高速処理には適さない。鍵の値が非対称で争いの解決可能。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem9"><p>ディジタル署名は、送信者が秘密鍵を使って変換処理して、<br>受信者が公開鍵で正しく復元できたか（逆変換処理）を確認する。<br>条件を満たせば法的にも有効である。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem10"><p>ハッシュ関数は、メッセージを上手く要約してコストを下げるもの？</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem11"><p>争いの解決には、公開鍵暗号の仕組みを利用したディジタル署名を活用するなどがある。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem12"><p>認証には<br>ユーザー認証（なりすまし防止）や<br>メッセージ認証(改ざんや偽装をさせない)、<br>クライアント認証(クライアント機器の立証）がある。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem13"><p>公開鍵認証基盤(PKI)は、公開鍵暗号方式を利用した認証基盤システムである。httpsなど。<br>みんなが使えるっていうこと？</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem14"><p>不正侵入検出技術は、過去の不正侵入の手口と照合したり、異常な行動を検出したりする。<br>もう侵入してしまったものを検出する</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem15"><p>情報ハイディングは、著作権保護などにもつかわれる？社内犯、内部犯などを検出するやつ。<br>電子透かしなどで情報抜き出したやつのデータを入れておく。(絵師の無断転載にも有効！？)</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem16"><p>バイオメトリクスは、生態的な特徴量（指紋、顔認証など）のことを言う</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" id="problem17"><p>システムの仕様は公開されている方が外部の評価を受けているので、ほとんどの問題が解決されていると考えられる。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+
+
+  </div>
+  <script src="./problems.js"></script>
+</body>
+</html>
