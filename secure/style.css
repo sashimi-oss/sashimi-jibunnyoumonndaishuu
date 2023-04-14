@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   background-color: #bac8c6;
 }
@@ -105,5 +109,7 @@ body {
 }
 
 .square:hover {
-  border: 5px solid #bac8c6;
+  outline: 5px solid #494544;
+  letter-spacing: 0.15em;
+  transition: all 0.2s ease;
 }
