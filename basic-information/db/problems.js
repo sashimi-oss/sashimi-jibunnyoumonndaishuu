@@ -2,6 +2,9 @@ const problem = document.getElementsByClassName('problem');
 const cor = document.getElementsByClassName('cor');
 const inc = document.getElementsByClassName('inc');
 let count = [];
+const w03 = document.getElementById('w03');
+const wbt2 = document.getElementById('wbt2');
+const wbt3 = document.getElementById('wbt3');
 
 function answer(i, bool) {
   if (count[i] === 0) {
@@ -13,7 +16,6 @@ function answer(i, bool) {
   console.log(count);
 }
 
-
 for (let i = 0; i < cor.length; i++) {
   count[i] = 0;
   cor[i].addEventListener('click', () => answer(i, true));
@@ -24,7 +26,14 @@ for (let i = 0; i < inc.length; i++) {
   inc[i].addEventListener('click', () => answer(i, false))
 }
 
-  console.log(count);
+wbt2.addEventListener('click', () => {
+  w02.scrollIntoView({behavior:"smooth"});
+})
+
+wbt3.addEventListener('click', () => {
+  w03.scrollIntoView({behavior:"smooth"});
+})
+
 
 const explain = [];
 explain[0] = 'DataBase Management Systemの略';

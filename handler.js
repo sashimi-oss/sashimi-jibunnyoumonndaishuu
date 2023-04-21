@@ -17,3 +17,4 @@ path[1] = './basic-information/bsinfo-handler.html';
 path[2] = './php/index.html';
 path[3] = './secure/secure-handler.html';
 path[4] = './data-ana/index.html';
+path[5] = './experts/handler.html';

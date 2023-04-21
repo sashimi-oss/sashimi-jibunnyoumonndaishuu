@@ -10,6 +10,7 @@ function answer(i, bool) {
     problem[i].insertAdjacentHTML('beforeend', explain[i]);
     count[i]++;
   }
+  console.log(count);
 }
 
 
@@ -23,13 +24,8 @@ for (let i = 0; i < inc.length; i++) {
   inc[i].addEventListener('click', () => answer(i, false))
 }
 
+  console.log(count);
 
-// week1.addEventListener('click', () => {
-//   problem13.scrollIntoView({behavior:"smooth"});
-// })
-
-
-const explain = [
-  'りんごはりんごだから',
-  'bananaはばななだから'
-];
+const explain = [];
+explain[0] = 'りんごはりんごだから';
+explain[1] = 'bananaはばななだから';
