@@ -18,3 +18,4 @@ path[2] = './php/index.html';
 path[3] = './secure/secure-handler.html';
 path[4] = './data-ana/index.html';
 path[5] = './experts/handler.html';
+path[6] = './game-create/index.html';
