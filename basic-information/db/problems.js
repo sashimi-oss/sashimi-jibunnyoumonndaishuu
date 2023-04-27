@@ -45,3 +45,5 @@ explain[5] = '子エンティティの方には〇を描く。<br>1~多にはP,0
 explain[6] = 'PK (primary key)';
 explain[7] = 'FK (foreign key)';
 explain[8] = ' <img src="./img/ER図_3.jpg" alt="ER図" width="650" height="400">';
+explain[9] = '正規化(normalization)<br>※冗長：長くて無駄のある状態<br>◼ 第１～第５正規化までの過程があるが、通常は第３正規化まで行われていればよい';
+explain[10] = '※ユニークにするために、主キーは連番にすることが多い';

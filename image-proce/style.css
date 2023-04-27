@@ -8,13 +8,6 @@ body {
   background-color: aliceblue;
 }
 
-header {
-  display: flex;
-  position: fixed;
-  top: 0;
-  cursor: pointer;
-}
-
 .container {
   background-color: skyblue;
   text-align: center;

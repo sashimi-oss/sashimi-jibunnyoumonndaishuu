@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自作の問題集</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container" class="container">
+    <div class="problem" ><p>・ストリーム暗号(streamcipher)は送信者と受信者が同じ疑似乱数生成アルゴリズム、初期値、共通鍵の３つを持つ</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>・ストリーム暗号(streamcipher)において<br>送信者は平文に疑似乱数をXORして暗号化し、受信者はその暗号文に同じ疑似乱数をXORして復号する。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>ストリーム暗号の暗号文のエラーは復号時に拡大する</p> <button class="btn1 inr">〇</button> <button class="btn2 cor">×</button> </div>
+    <div class="problem" ><p>この暗号の安全性は乱数の安全性に依存し、乱数に偏りが無く、周期が長いことが必要。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>・ブロック暗号(blockciphen)は<br>平文を64ビットや128ビットなどのブロック単位に分割して、ブロックごとに暗号化を行う共通鍵暗号のこと</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>・鍵スケジュール部<br>-鍵をそのまま暗号化に用いると処理に偏りが発生したりブロックサイズに満たなかったりするため、鍵を元にデータ量を増やした副鍵(拡大鍵)を生成する。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>・データかくはん部<br>副鍵を使って1ブロック分の平文を暗号文に変換する。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>ブロック暗号の利用モードには<br>ECBモード<br>CBCモード<br>CTRモード等がある</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>ECBモードは<br>ブロックごとに独立して暗号化/復号を行う、基本かつシンプルなモード。<br>基本的な暗号そのものであるため、ElectronicCodeBook(暗号帳)方式と呼ぶ。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>CBCモードは<br>ー最初のブロックでは入力平文に初期値をXORし、それ以降は出力暗号文を次のブロックの入力平文にXORしていくモード。広く利用されている。<br>ー前ブロックの出力を次ブロックの入力につなげていくため、CipherBlockChaining(暗号ブロック連鎖)方式と呼ぶ。<br>ー暗号文のエラーが平文で拡大してしまう(次のブロックに伝わる)。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>CBCモードは1番目のブロックは、平文1に初期値をXORし、その値を暗号アルゴリズムで暗号化して、暗号文1を出力する。<br>2番目以降のブロックは、平文nに前のブロックの出力である暗号文n-1をXORし、その値を暗号アルゴリズムで暗号化して、暗号文nを出力する。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>CBCモードで暗号文を復号するには、暗号文を一定のサイズに分割し、暗号文1、暗号文2、......のブロックにする。<br></p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>CTRモード：<br>初期値を設定したカウンタ(counter)の値を暗号化してデータにXORする処理を、カウンタの値を1ずつ増やしながら繰り返すモード。<br>カウンタの暗号化の部分は疑似乱数の生成に該当する。その疑似乱数を平文にXORしていくことで、実際のデータの暗号化を実現している。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>CTRモードの復号：<br>復号処理は平文と暗号文を入れ替えて同じことを行う。すなわち、復号にも`暗号化」アルゴリズムを用いる。<br>あるデータに同じ値(同じ疑似乱数)を②回XORすると元のデータに戻るため(これはXORの性質による)。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>DESについて：<br>共通鍵ブロック暗号の代表的存在。データ暗号化標準規格(DataEncryptionStandard)。<br>1ブロック64ビットで、鍵も64ビット(実質56ビット)。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>DESのデータかくはん部について：<br>64ビットの平文は、最初に初期転置(TP)でビット順が入れ替えられる。<br>次に、以下の処理(1段、1ラウンド)を16回繰り返す。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+    <div class="problem" ><p>AES (Advanced Encryption Standard):共通鍵暗号方式。ブロック暗号。<br>Triple-DESより高速で、安全性も高い。<br>現在主流の暗号アルゴリズム。</p> <button class="btn1 cor">〇</button> <button class="btn2 inc">×</button> </div>
+
+
+  </div>
+  <script src="./problems.js"></script>
+</body>
+</html>
