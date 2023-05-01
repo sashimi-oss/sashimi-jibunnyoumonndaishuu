@@ -1,11 +1,13 @@
 const problem = document.getElementsByClassName('problem');
 const cor = document.getElementsByClassName('cor');
 const inc = document.getElementsByClassName('inc');
-const w02 = document.getElementById('w02');
-const w03 = document.getElementById('w03');
-const wbt2 = document.getElementById('wbt2');
-const wbt3 = document.getElementById('wbt3');
+const week = document.getElementsByClassName('week');
+const wbt = document.getElementsByClassName('wbt');
 let count = [];
+// const w02 = document.getElementById('w02');
+// const w03 = document.getElementById('w03');
+// const wbt2 = document.getElementById('wbt2');
+// const wbt3 = document.getElementById('wbt3');
 
 function answer(i, bool) {
   if (count[i] === 0) {
@@ -27,17 +29,23 @@ for (let i = 0; i < inc.length; i++) {
   inc[i].addEventListener('click', () => answer(i, false))
 }
 
-wbt1.addEventListener('click', () => {
-  w01.scrollIntoView({behavior:"smooth"});
-})
+for (let i = 0; i < week.length; i++){
+  wbt[i].addEventListener('click', () => {
+    week[i].scrollIntoView({behavior:"smooth"});
+  })
+}
 
-wbt2.addEventListener('click', () => {
-  w02.scrollIntoView({behavior:"smooth"});
-})
+// wbt1.addEventListener('click', () => {
+//   w01.scrollIntoView({behavior:"smooth"});
+// })
 
-wbt3.addEventListener('click', () => {
-  w03.scrollIntoView({behavior:"smooth"});
-})
+// wbt2.addEventListener('click', () => {
+//   w02.scrollIntoView({behavior:"smooth"});
+// })
+
+// wbt3.addEventListener('click', () => {
+//   w03.scrollIntoView({behavior:"smooth"});
+// })
 
 console.log(Math.floor(Math.random() * 2));
 
@@ -72,3 +80,13 @@ explain[26] = 'ドイツ語で“形態”という意味';
 explain[27] = '・ リンゴのドット絵を見て，それを点の集まりではなく，“リンゴ”と知覚できる．<br>・ 音楽を聴いて，それらを単音の集まりではなく，“リズムやメロディ”を知覚できる．';
 explain[28] = ' // // // //　　■□□□■□□□■';
 explain[29] = 'ゲシュタルトとはドイツ語で“形態”という意味．<br> “The Mirror” by Dream Theater<br>↑Metric Modulationの演奏例';
+explain[30] = '・測定の対象となる、モノ・コトの大・小や多・少（広辞苑）<br>・現象，物体または物質の持つ属性で，定性的に区別でき，かつ，定量的に決定できる（JIS, 日本産業規格（旧日本工業規格）';
+explain[31] = '物理現象や物質の性質について､客観的な測定方法が明確である量<br>e.g. 長さ，質量，時間，速度，濃度，圧力，温度，etc.';
+explain[32] = 'モノ・コトに対する人の主観的感覚・感性の強さ<br>e.g. 音の高さ・大きさ，光の明るさ，食べ物の甘さ・苦さ，かっこよさ，美しさ，見やすさ，インパクト，etc.';
+explain[33] = '心理物理量を取り扱う学問を精神（心理）物理学（Psychophysics）と呼ぶ音の聴こえを取り扱う分野は音響心理物理，聴覚心理物理と呼ばれる';
+explain[34] = '物理刺激の強さをゼロから徐々に大きくすると，ある値を越えた時点で感覚を生じる';
+explain[35] = '音圧レベルの強さの違いを聞き分けれるかとか';
+explain[36] = '‐同じ物理刺激であっても，生じる知覚はいつも同じ心理物理量の測定方法として下記のものは適切である<br>同じ人で何度も繰り返して測定<br>多数の人に対して測定ではない<br>‐聴く人によっても異なることがある<br>大変そう！！！';
+explain[37] = 'ラウドネス曲線とかグラフで見ることが出来る';
+explain[38] = '‐ヒトは20～20kHz（20歳前後の若者）<br>※ただし，19Hzや21kHzが絶対に聴こえないということではない．<br><br>‐動物に対する実験も行われている<br>ネコ，イヌ：20～50kHz, コウモリ，イルカ：1ｋHz～100kHz以上<br>爬虫類，両生類は低周波のみ，魚類の可聴周波数範囲も狭い';
+explain[39] = '・横軸：雑音の強さレベルを感覚レベルSL(sensational level)で表示<br>・感覚レベルは，最小可聴閾値を0dBとしたときの刺激音の音圧レベル<br><br>感覚レベルが20dB以上であれば音の強さの弁別閾は約0.4dB';
